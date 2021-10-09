@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>G:\NCNN\build-vs2017\install\include;G:\NCNN\build-vs2017\install\include\ncnn;G:\opencv440\build\include;G:\opencv440\build\include\opencv2;$(IncludePath)</IncludePath>
+    <LibraryPath>G:\protobuf\build-vs2019\install\lib;G:\NCNN\build-vs2017\install\lib;G:\opencv440\build\x64\vc15\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>libprotobuf.lib;opencv_world440.lib;ncnn.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
